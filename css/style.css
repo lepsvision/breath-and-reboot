@@ -629,6 +629,8 @@ footer {
     display: block;
     position: fixed;
     z-index: 30; }
+  .nav_link:active:after {
+    opacity: 1; }
   .preloader {
     position: fixed;
     left: 0;
