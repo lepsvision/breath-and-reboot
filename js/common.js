@@ -1,12 +1,7 @@
 $('.menu-btn').on('click', function(e){
-	e.preventDefault();
-	$(this).toggleClass('menu-btn_active');
-});
-
-$('.menu-btn').on('click', function(e){
-	e.preventDefault();
-	$('.nav').toggleClass('nav_active');
-
+  e.preventDefault();
+  $(this).toggleClass('menu-btn_active');
+  $('.nav').toggleClass('nav_active');
 });
 
 var top_show = 300;
@@ -38,6 +33,8 @@ var topel = $(id).offset().top;
 var heightorder = $(id).height();
 var positionscroll = topel - heightpage/2 + heightorder/2;
 $('body,html').animate({scrollTop: positionscroll}, 500);
+$('.menu-btn').toggleClass('menu-btn_active');
+$('.nav').toggleClass('nav_active');
 });
 });
 
